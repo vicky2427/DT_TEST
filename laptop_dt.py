@@ -27,9 +27,9 @@ while True:
         color = "red"
     
     # 3. Update Visuals
-    cpu_plot.metric("CPU Usage", f"{data['cpu']}%")
-    mem_plot.metric("Memory Usage", f"{data['mem']}%")
-    battery_gauge.progress(data['batt'] / 100)
+    cpu_plot.metric("CPU Usage", f"{data}%")
+    mem_plot.metric("Memory Usage", f"{data}%")
+    battery_gauge.progress(data / 100)
     status_box.markdown(f"### Current State: :{color}[{status}]")
     
     time.sleep(1) # Synchronize every second
