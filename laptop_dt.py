@@ -23,9 +23,7 @@ with col2:
 while True:
     # 1. Capture Data
     data = {
-        "cpu": psutil.cpu_percent(),
-        "mem": psutil.virtual_memory().percent,
-        "batt": psutil.sensors_battery().percent if psutil.sensors_battery() else 0
+        
     }
     
     # 2. Logic (Thresholding)
